@@ -3,7 +3,7 @@
 A full-stack expense tracking app that uses AI to parse natural language input.
 
 Built by: Shashank Gupta
-GitHub: [YOUR GITHUB]
+GitHub: https://github.com/Sg99sg15/ai-expense-tracker
 Time to build: 25 minutes (with AI assistance)
 
 ## 🎥 Demo

@@ -30,8 +30,9 @@ Time to build: 25 minutes (with AI assistance)
 cd backend
 npm install
 cp .env.example .env
-# Add your Gemini API key to .env
-npm run dev
+# Add your Groq API key to .env
+npm run build
+npm start
 ```
 
 ### Mobile

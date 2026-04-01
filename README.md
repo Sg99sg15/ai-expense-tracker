@@ -8,7 +8,7 @@ Time to build: 25 minutes (with AI assistance)
 
 ## 🎥 Demo
 
-[Link to your screen recording]
+[Watch Demo](https://drive.google.com/file/d/1feJYEaaG2rZ4FY9fN-fWHZ8FQ23kWS6-/view?usp=sharing)
 
 ## 🛠️ Tech Stack
 

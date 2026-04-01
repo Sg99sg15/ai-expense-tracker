@@ -15,15 +15,15 @@ Time to build: 25 minutes (with AI assistance)
 - **Mobile:** React Native, Expo, TypeScript
 - **Backend:** Node.js, Express, TypeScript
 - **Database:** SQLite (better-sqlite3)
-- **AI:** Gemini API (gemini-1.5-flash)
+- **AI:** Groq API (llama-3.3-70b-versatile)
 
 ## 🚀 Setup Instructions
 
 ### Prerequisites
 - Node.js 18+
 - npm or yarn
-- Expo CLI
-- Gemini API key (free at [aistudio.google.com](https://aistudio.google.com/apikey))
+- Expo Go app on your phone ([Android](https://play.google.com/store/apps/details?id=host.exp.exponent) / [iOS](https://apps.apple.com/app/expo-go/id982107779))
+- Groq API key (free at [console.groq.com](https://console.groq.com))
 
 ### Backend
 ```bash
@@ -45,6 +45,8 @@ npm start
 
 > **Physical device:** Update `BASE_URL` in `mobile/src/services/api.ts` with your machine's local IP (e.g., `http://192.168.1.x:3000`)
 
+> **Simulator:** Keep `BASE_URL` as `http://localhost:3000`
+
 ## 📁 Project Structure
 
 ```
@@ -55,7 +57,7 @@ ai-expense-tracker/
 │   │   ├── routes/
 │   │   │   └── expenses.ts   # POST, GET, DELETE endpoints
 │   │   ├── services/
-│   │   │   └── aiService.ts  # Gemini AI parsing logic
+│   │   │   └── aiService.ts  # Groq AI parsing logic
 │   │   └── database/
 │   │       └── db.ts         # SQLite setup & CRUD functions
 │   ├── .env.example
@@ -116,7 +118,7 @@ Strict JSON-only output eliminates parsing errors, and explicit category lists e
 ## 📝 AI Tools Used
 
 - **Claude Code**: Used for scaffolding full project structure, backend routes, database setup, and React Native UI
-- **Gemini API (gemini-1.5-flash)**: Used at runtime to parse natural language expense input into structured JSON
+- **Groq API (llama-3.3-70b-versatile)**: Used at runtime to parse natural language expense input into structured JSON
 
 Most helpful prompt: *"RESPOND ONLY WITH VALID JSON, no other text"* — this single instruction eliminated all markdown/code-block wrapping issues from the AI response.
 
